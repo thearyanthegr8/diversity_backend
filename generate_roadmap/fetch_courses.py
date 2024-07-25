@@ -3,7 +3,7 @@ import requests
 def fetch_courses(topic, price):
   udemy_price = "price-paid" if price == "paid" else "price-free" if price == "free" else ""
   videos = []
-  udemy_url = f"https://www.udemy.com/api-2.0/courses/?page_size=5&search={topic}&ordering=relevance&language=en"
+  udemy_url = f"https://www.udemy.com/api-2.0/courses/?page_size=3&search={topic}&ordering=relevance&language=en"
   if udemy_price:
     udemy_url += f"&price={udemy_price}"
   r = requests.get(udemy_url, headers={
