@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
-from langchain_community.llms import Ollama
 from django.views.decorators.csrf import csrf_exempt
 import json
 import ast
