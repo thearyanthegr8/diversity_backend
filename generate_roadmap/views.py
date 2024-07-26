@@ -7,6 +7,7 @@ import requests
 from .fetch_courses import fetch_courses
 import google.generativeai as genai
 import os
+import re
 
 @csrf_exempt 
 def generate_roadmap(request):
@@ -94,6 +95,27 @@ def generate_roadmap(request):
 
     select_courses_response = model.generate_content(select_courses_prompt).text
 
+    # Assuming select_courses_response is defined elsewhere
+    urls = re.findall(r'https://www\.udemy\.com/course/[^\s/]+/', select_courses_response)
+
+    # Assuming courses is already a dictionary
+    courses_data = courses
+
+    # Step 3: Filter courses based on matching URLs
+    filtered_courses = {
+      level: {
+        course_name: [
+          course for course in course_list if course['url'] in urls
+        ]
+        for course_name, course_list in level_courses.items()
+      }
+      for level, level_courses in courses_data.items()
+    }
+
+    # Step 4: Output the filtered JSON
+    filtered_courses_json = json.dumps(filtered_courses, indent=2)
+    # print(filtered_courses_json)
+
     # Write output to file
     with open('roadmap_output.txt', 'w') as file:
       file.write("### Roadmap Response\n")
@@ -108,7 +130,7 @@ def generate_roadmap(request):
       file.write(select_courses_response + "\n")
 
     return HttpResponse(
-      select_courses_response,
+      filtered_courses_json,
       content_type="application/json"
     )
 
