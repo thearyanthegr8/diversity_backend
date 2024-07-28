@@ -114,6 +114,10 @@ def generate_roadmap(request):
 
     # Step 4: Output the filtered JSON
     filtered_courses_json = json.dumps(filtered_courses, indent=2)
+    for level, topics, chapters in filtered_courses_json.items():
+      level[topics][chapters] = {}
+      for topic in topics:
+        courses[level][topic] = fetch_courses(topic, price)
     # print(filtered_courses_json)
 
     # Write output to file
