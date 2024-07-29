@@ -137,6 +137,25 @@ def generate_roadmap(request):
       filtered_courses_json,
       content_type="application/json"
     )
+@csrf_exempt
+def generate_mcqs(request):
+    if request.method == "GET":
+        topic_name = request.GET.get('name', None)
+        
+        if not topic_name:
+            return JsonResponse({'error': 'Topic name is required'}, status=400)
+        
+        genai.configure(api_key="AIzaSyBzjohOuPQSaNZ9hTJBYCiKLwpC_8_PSMo")
+        
+        model = genai.GenerativeModel('gemini-1.5-flash')
+        
+        prompt = f"""
+        You have the following topic {topic_name}. Give me 10 MCQ questions that cover essentials in that topic. The questions are required for a preparatory quiz for a job interview, so keep the questions at industry level difficulty only, do not keep the questions of easy difficulty. Ensure there are no redundant questions and that you give exact 10 MCQs with only 1 correct answer. Ensure that you only give the questions and the answer key as the response with no extra text. Do not include any bolded letters or any sort of font formatting. Give the output in JSON format.
+        """
+        
+        response = model.generate_content(prompt).text
+        
+        return HttpResponse(response, content_type = "application/json")
 
 
 def generate_interview_questions(request):
