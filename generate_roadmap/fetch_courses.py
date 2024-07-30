@@ -19,7 +19,7 @@ def fetch_courses(topic, price):
         description = i["headline"]
         thumbnail = i["image_480x270"]
         price = i["price"]
-        course_structure = fetch_course_structure(id)
+        # course_structure = fetch_course_structure(id)
         videos.append({
             "id": id,
             "title": title,
@@ -27,7 +27,7 @@ def fetch_courses(topic, price):
             "description": description,
             "thumbnail": thumbnail,
             "price": price,
-            "course_structure": course_structure
+            # "course_structure": course_structure
         })
 
     return videos

@@ -8,6 +8,7 @@ from .fetch_courses import fetch_courses
 import google.generativeai as genai
 import os
 import re
+import ast
 
 @csrf_exempt 
 def generate_roadmap(request):
@@ -32,14 +33,16 @@ def generate_roadmap(request):
     """
 
     roadmap = model.generate_content(roadmap_prompt).text.replace("`", "").replace("json", "")
+    # roadmap = json.loads(roadmap)
+    roadmap_dict = ast.literal_eval(roadmap)
 
-    # courses = {}
+    courses = {}
  
-    # # fetch_coures
-    # for level, topics in roadmap.items():
-    #   courses[level] = {}
-    #   for topic in topics:
-    #     courses[level][topic] = fetch_courses(topic, price)
+    # fetch_coures
+    for level, topics in roadmap_dict.items():
+      courses[level] = {}
+      for topic in topics:
+        courses[level][topic] = fetch_courses(topic, price)
 
     # def convert_to_bullet_points(data):
     #   result = []
@@ -108,7 +111,7 @@ def generate_roadmap(request):
 
     return HttpResponse(
       # filtered_courses_json,
-      roadmap,
+      courses,
       content_type="application/json"
     )
     
