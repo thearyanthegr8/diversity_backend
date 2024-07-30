@@ -8,7 +8,7 @@ from .fetch_courses import fetch_courses
 import google.generativeai as genai
 import os
 import re
-import ast
+from .fetch_courses import fetch_course_structure
 
 @csrf_exempt 
 def generate_roadmap(request):
@@ -58,17 +58,13 @@ def generate_roadmap(request):
 
     # list_courses = convert_to_bullet_points(courses)
 
-    # select_courses_prompt = f"""
-    # You have a list of courses with levels and topics {courses}. For each topic, you have a list of courses. The list contains levels, topics, and then courses for each topic. Don't change topic, or the level. Only choose between the couses available for it. Choose the most relevant course for each topic based on title and description. Choose only one course per topic. Format the result as follows:
-    # $$$ Level 1
-    #   !!! Name of topic 1
-    #     ### Course URL
-    #   !!! Name of topic 2
-    #     ### Course URL
-    # Include the best course for each topic as specified, and make sure to cover all topics listed. Only provide the formatted data without additional explanations. Don't include any text other than the list. 
-    # """
+    select_courses_prompt = f"""
+    You have a list of courses with levels and topics {courses}. For each topic, you have a list of courses. The list contains levels, topics, and then courses for each topic. Don't change topic, or the level. Only choose between the courses available for it. Choose the most relevant course for each topic based on title and description. Choose only one course per topic. Give the output in a JSON file.
+    Include the best course for each topic as specified, and make sure to cover all topics listed. Only provide the formatted data without additional explanations. Don't include any text other than the list.
+    """
 
-    # select_courses_response = model.generate_content(select_courses_prompt).text
+    select_courses_response = model.generate_content(select_courses_prompt).text.replace("`", "").replace("json", "")
+    select_courses_response_dict = ast.literal_eval(select_courses_response)
 
     # # TODO: Change this to id of courses
     # # Assuming select_courses_response is defined elsewhere
@@ -96,6 +92,17 @@ def generate_roadmap(request):
     #     courses[level][topic] = fetch_courses(topic, price)
     # print(filtered_courses_json)
 
+    # # Load the JSON file
+    # with open('courses.json', 'r') as file:
+    #     courses_data = json.load(file)
+
+    # Extract IDs and fetch course structures
+    # course_structures = {}
+    for level, courses in select_courses_response_dict.items():
+        for course_name, course_info in courses.items():
+            course_id = course_info["id"]
+            select_courses_response_dict[level][course_name]["structure"] = fetch_course_structure(course_id)
+
     # Write output to file
     # with open('roadmap_output.txt', 'w') as file:
     #   file.write("### Roadmap Response\n")
@@ -111,7 +118,7 @@ def generate_roadmap(request):
 
     return HttpResponse(
       # filtered_courses_json,
-      courses,
+      json.dumps(select_courses_response_dict),
       content_type="application/json"
     )
     
