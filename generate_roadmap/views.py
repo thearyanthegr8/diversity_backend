@@ -26,65 +26,37 @@ def generate_roadmap(request):
     
     roadmap_prompt = f"""
     Create a comprehensive roadmap for mastering {skill}, structured from complete beginner to a decent level of proficiency, starting from level 1. Provide the answer in bullet points in the following format:
-    $$$ Level 1
-      !!! Name of Topic 1
-        ### Sub Topic 1
-        ### Sub Topic 2
-        ### Sub Topic 3
-      !!! Name of Topic 2
-        ### Sub Topic 1
-        ### Sub Topic 2
-        ### Sub Topic 3
-      !!! Name of Topic 3
-        ### Sub Topic 1
-        ### Sub Topic 2
-        ### Sub Topic 3
-    And so on...
     Keep the topics concise, topics should be the main things to learn. Don't provide a lot of information. Only the names of the topics and sub-topics are required.
     Do not include any other text or explanations.
     """
 
-    roadmap_response = model.generate_content(roadmap_prompt).text
+    roadmap = model.generate_content(roadmap_prompt).text
+    #TODO: Remove first and last lines from roadmap
 
-    levels = roadmap_response.split("$$$")
-    levels = [level for level in levels if level.strip()]
-    roadmap = {}
     courses = {}
-
-    # To conver into dict
-    for i in levels:
-      level = i.split("!!!")
-      level_name = level[0].strip()
-      roadmap[level_name] = {}
-      topics = level[1:]
-      topics = [topic for topic in topics if topic.strip()]
-      for j in topics:
-        topic = j.split("###")
-        topic_name = topic[0].strip()
-        roadmap[level_name][topic_name] = [sub_topic.strip() for sub_topic in topic[1:]]
-    
+ 
     # fetch_coures
     for level, topics in roadmap.items():
       courses[level] = {}
       for topic in topics:
         courses[level][topic] = fetch_courses(topic, price)
 
-    def convert_to_bullet_points(data):
-      result = []
-      for level, topics in data.items():
-        result.append(f"$$$ {level}")
-        for topic, courses in topics.items():
-          result.append(f"  !!! {topic}")
-          for course in courses:
-            result.append(f"   ### {course['title']}")
-            result.append(f"    URL: {course['url']}")
-            result.append(f"    Description: {course['description']}")
-      return "\n".join(result)
+    # def convert_to_bullet_points(data):
+    #   result = []
+    #   for level, topics in data.items():
+    #     result.append(f"$$$ {level}")
+    #     for topic, courses in topics.items():
+    #       result.append(f"  !!! {topic}")
+    #       for course in courses:
+    #         result.append(f"   ### {course['title']}")
+    #         result.append(f"    URL: {course['url']}")
+    #         result.append(f"    Description: {course['description']}")
+    #   return "\n".join(result)
 
-    list_courses = convert_to_bullet_points(courses)
+    # list_courses = convert_to_bullet_points(courses)
 
     select_courses_prompt = f"""
-    You have a list of courses with levels and topics {list_courses}. For each topic, you have a list of courses. The list contains levels, topics, and then courses for each topic. Don't change topic, or the level. Only choose between the couses available for it. Choose the most relevant course for each topic based on title and description. Choose only one course per topic. Format the result as follows:
+    You have a list of courses with levels and topics {courses}. For each topic, you have a list of courses. The list contains levels, topics, and then courses for each topic. Don't change topic, or the level. Only choose between the couses available for it. Choose the most relevant course for each topic based on title and description. Choose only one course per topic. Format the result as follows:
     $$$ Level 1
       !!! Name of topic 1
         ### Course URL
@@ -95,6 +67,7 @@ def generate_roadmap(request):
 
     select_courses_response = model.generate_content(select_courses_prompt).text
 
+    # TODO: Change this to id of courses
     # Assuming select_courses_response is defined elsewhere
     urls = re.findall(r'https://www\.udemy\.com/course/[^\s/]+/', select_courses_response)
 
@@ -121,22 +94,23 @@ def generate_roadmap(request):
     # print(filtered_courses_json)
 
     # Write output to file
-    with open('roadmap_output.txt', 'w') as file:
-      file.write("### Roadmap Response\n")
-      file.write(roadmap_response + "\n\n")
-      file.write("### Roadmap JSON\n")
-      file.write(json.dumps(roadmap, indent=2) + "\n\n")
-      file.write("### Courses JSON\n")
-      file.write(json.dumps(courses, indent=2) + "\n\n")
-      file.write("### List of Courses\n")
-      file.write(list_courses + "\n\n")
-      file.write("### Selected Courses Response\n")
-      file.write(select_courses_response + "\n")
+    # with open('roadmap_output.txt', 'w') as file:
+    #   file.write("### Roadmap Response\n")
+    #   file.write(roadmap_response + "\n\n")
+    #   file.write("### Roadmap JSON\n")
+    #   file.write(json.dumps(roadmap, indent=2) + "\n\n")
+    #   file.write("### Courses JSON\n")
+    #   file.write(json.dumps(courses, indent=2) + "\n\n")
+    #   file.write("### List of Courses\n")
+    #   file.write(list_courses + "\n\n")
+    #   file.write("### Selected Courses Response\n")
+    #   file.write(select_courses_response + "\n")
 
     return HttpResponse(
       filtered_courses_json,
       content_type="application/json"
     )
+    
 @csrf_exempt
 def generate_mcqs(request):
     if request.method == "GET":

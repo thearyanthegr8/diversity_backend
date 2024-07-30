@@ -1,168 +1,160 @@
 ### Roadmap Response
 $$$ Level 1
   !!! Introduction to AI & ML
-    ### What is AI?
-    ### What is ML?
-    ### Types of AI
-    ### Types of ML
-  !!! Python Programming
-    ### Data Types & Variables
-    ### Operators
-    ### Control Flow (if, else, for, while)
+    ### What is AI & ML
+    ### History of AI & ML
+    ### Applications of AI & ML
+  !!! Programming Fundamentals
+    ### Python Basics
+    ### Data Structures
+    ### Control Flow
     ### Functions
-  !!! Math for ML
+  !!! Mathematics for ML
     ### Linear Algebra
     ### Calculus
-    ### Probability & Statistics
+    ### Statistics & Probability
+
 $$$ Level 2
+  !!! Data Manipulation & Analysis
+    ### Pandas
+    ### NumPy
+    ### Data Visualization with Matplotlib & Seaborn
+    ### Exploratory Data Analysis
   !!! Supervised Learning
     ### Linear Regression
     ### Logistic Regression
     ### Decision Trees
-    ### Support Vector Machines (SVM)
+    ### Support Vector Machines
   !!! Unsupervised Learning
-    ### K-Means Clustering
-    ### Principal Component Analysis (PCA)
-  !!! Data Preprocessing & Feature Engineering
-    ### Data Cleaning
-    ### Data Transformation
-    ### Feature Selection
-    ### Feature Scaling
+    ### Clustering
+    ### Dimensionality Reduction
+    ### Association Rule Mining
+
 $$$ Level 3
   !!! Deep Learning
     ### Neural Networks
-    ### Convolutional Neural Networks (CNNs)
-    ### Recurrent Neural Networks (RNNs)
-    ### Long Short-Term Memory (LSTM)
-  !!! Natural Language Processing (NLP)
+    ### Convolutional Neural Networks
+    ### Recurrent Neural Networks
+    ### TensorFlow & PyTorch
+  !!! Natural Language Processing
     ### Text Preprocessing
-    ### Word Embeddings
     ### Sentiment Analysis
     ### Machine Translation
+    ### Text Generation
   !!! Computer Vision
     ### Image Classification
     ### Object Detection
     ### Image Segmentation
+    ### Image Generation
+
 $$$ Level 4
   !!! Reinforcement Learning
+    ### Markov Decision Processes
     ### Q-Learning
-    ### Deep Q-Learning
-    ### Policy Gradients
-  !!! Generative Adversarial Networks (GANs)
-    ### Basic GAN Architecture
-    ### Variational Autoencoders (VAEs)
-    ### Generative Pre-Trained Transformer (GPT)
-  !!! Ethics & Responsible AI
-    ### Bias in AI
-    ### Privacy & Security
-    ### AI Safety
-$$$ Level 5
-  !!! Advanced ML Techniques
-    ### Ensemble Methods
-    ### Bayesian Learning
+    ### Deep Reinforcement Learning
+  !!! Advanced Topics
+    ### Generative Adversarial Networks (GANs)
     ### Transfer Learning
-  !!! Building & Deploying AI Systems
+    ### Model Optimization & Regularization
+    ### Ethical Considerations in AI
+
+$$$ Level 5
+  !!! Building AI Applications
+    ### API Integration
+    ### Deploying ML Models
+    ### Data Pipelines
     ### Cloud Computing for AI
-    ### Model Deployment & Monitoring
-    ### API Development
-  !!! Industry Applications of AI
-    ### AI in Healthcare
-    ### AI in Finance
-    ### AI in Retail
-    ### AI in Transportation
+  !!! Research & Development
+    ### Contributing to Open Source Projects
+    ### Staying Up-to-Date with AI Trends
+    ### AI Research & Innovation
+    ### Building a Portfolio of Projects
 
 
 ### Roadmap JSON
 {
   "Level 1": {
     "Introduction to AI & ML": [
-      "What is AI?",
-      "What is ML?",
-      "Types of AI",
-      "Types of ML"
+      "What is AI & ML",
+      "History of AI & ML",
+      "Applications of AI & ML"
     ],
-    "Python Programming": [
-      "Data Types & Variables",
-      "Operators",
-      "Control Flow (if, else, for, while)",
+    "Programming Fundamentals": [
+      "Python Basics",
+      "Data Structures",
+      "Control Flow",
       "Functions"
     ],
-    "Math for ML": [
+    "Mathematics for ML": [
       "Linear Algebra",
       "Calculus",
-      "Probability & Statistics"
+      "Statistics & Probability"
     ]
   },
   "Level 2": {
+    "Data Manipulation & Analysis": [
+      "Pandas",
+      "NumPy",
+      "Data Visualization with Matplotlib & Seaborn",
+      "Exploratory Data Analysis"
+    ],
     "Supervised Learning": [
       "Linear Regression",
       "Logistic Regression",
       "Decision Trees",
-      "Support Vector Machines (SVM)"
+      "Support Vector Machines"
     ],
     "Unsupervised Learning": [
-      "K-Means Clustering",
-      "Principal Component Analysis (PCA)"
-    ],
-    "Data Preprocessing & Feature Engineering": [
-      "Data Cleaning",
-      "Data Transformation",
-      "Feature Selection",
-      "Feature Scaling"
+      "Clustering",
+      "Dimensionality Reduction",
+      "Association Rule Mining"
     ]
   },
   "Level 3": {
     "Deep Learning": [
       "Neural Networks",
-      "Convolutional Neural Networks (CNNs)",
-      "Recurrent Neural Networks (RNNs)",
-      "Long Short-Term Memory (LSTM)"
+      "Convolutional Neural Networks",
+      "Recurrent Neural Networks",
+      "TensorFlow & PyTorch"
     ],
-    "Natural Language Processing (NLP)": [
+    "Natural Language Processing": [
       "Text Preprocessing",
-      "Word Embeddings",
       "Sentiment Analysis",
-      "Machine Translation"
+      "Machine Translation",
+      "Text Generation"
     ],
     "Computer Vision": [
       "Image Classification",
       "Object Detection",
-      "Image Segmentation"
+      "Image Segmentation",
+      "Image Generation"
     ]
   },
   "Level 4": {
     "Reinforcement Learning": [
+      "Markov Decision Processes",
       "Q-Learning",
-      "Deep Q-Learning",
-      "Policy Gradients"
+      "Deep Reinforcement Learning"
     ],
-    "Generative Adversarial Networks (GANs)": [
-      "Basic GAN Architecture",
-      "Variational Autoencoders (VAEs)",
-      "Generative Pre-Trained Transformer (GPT)"
-    ],
-    "Ethics & Responsible AI": [
-      "Bias in AI",
-      "Privacy & Security",
-      "AI Safety"
+    "Advanced Topics": [
+      "Generative Adversarial Networks (GANs)",
+      "Transfer Learning",
+      "Model Optimization & Regularization",
+      "Ethical Considerations in AI"
     ]
   },
   "Level 5": {
-    "Advanced ML Techniques": [
-      "Ensemble Methods",
-      "Bayesian Learning",
-      "Transfer Learning"
+    "Building AI Applications": [
+      "API Integration",
+      "Deploying ML Models",
+      "Data Pipelines",
+      "Cloud Computing for AI"
     ],
-    "Building & Deploying AI Systems": [
-      "Cloud Computing for AI",
-      "Model Deployment & Monitoring",
-      "API Development"
-    ],
-    "Industry Applications of AI": [
-      "AI in Healthcare",
-      "AI in Finance",
-      "AI in Retail",
-      "AI in Transportation"
+    "Research & Development": [
+      "Contributing to Open Source Projects",
+      "Staying Up-to-Date with AI Trends",
+      "AI Research & Innovation",
+      "Building a Portfolio of Projects"
     ]
   }
 }
@@ -175,25 +167,25 @@ $$$ Level 5
         "title": "Introduction to AI and ChatGPT",
         "url": "https://www.udemy.com/course/introduction-to-ai-and-chatgpt/",
         "description": "Artificial Intelligence, ChatGPT, Dell-E, Generative AI, Machine Learning, Deep Learning, Jobs and Interview Preparation",
-        "thumbnail": "https://img-b.udemycdn.com/course/480x270/5693080_6d3e_6.jpg",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/5693080_6d3e_6.jpg",
         "price": "\u20b91,499"
       },
       {
         "title": "Introduction to Data Engineering using Generative AI",
         "url": "https://www.udemy.com/course/generative-ai-for-data-engineering/",
         "description": "Hands-On Beginner's Guide to GenAI and LLMs for Transforming, Loading, and Modeling Data with Python and SQL",
-        "thumbnail": "https://img-b.udemycdn.com/course/480x270/5749844_da32.jpg",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/5749844_da32.jpg",
         "price": "\u20b91,499"
       },
       {
         "title": "EU AI Act Compliance Introduction",
         "url": "https://www.udemy.com/course/eu-ai-act-compliance/",
         "description": "A Beginner's Guide to Understanding and Achieving Compliance With European Union Artificial Intelligence Act",
-        "thumbnail": "https://img-b.udemycdn.com/course/480x270/5863828_b48e.jpg",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/5863828_b48e.jpg",
         "price": "\u20b91,799"
       }
     ],
-    "Python Programming": [
+    "Programming Fundamentals": [
       {
         "title": "100 Days of Code: The Complete Python Pro Bootcamp",
         "url": "https://www.udemy.com/course/100-days-of-code/",
@@ -202,21 +194,21 @@ $$$ Level 5
         "price": "\u20b93,099"
       },
       {
-        "title": "Learn Python Programming - Beginner to Master",
-        "url": "https://www.udemy.com/course/learn-python-with-abdul-bari/",
-        "description": "Become a Python Expert. for Both Academics and Industry.  100+ Challenges",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/4398404_2f8f_2.jpg",
-        "price": "\u20b9799"
+        "title": "C Programming Bootcamp - The Complete C Language Course",
+        "url": "https://www.udemy.com/course/c-programming-for-beginners-programming-in-c/",
+        "description": "C Programming 2024: Master the Fundamentals of C Programming Language. Join the Comprehensive C Bootcamp Masterclass!",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/3173974_b870_4.jpg",
+        "price": "\u20b93,099"
       },
       {
-        "title": "The Complete Python Developer",
-        "url": "https://www.udemy.com/course/complete-python-developer-zero-to-mastery/",
-        "description": "How to become a Python 3 Developer and get hired! Build 12+ projects, learn Web Development, Machine Learning + more!",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/2473048_8255_5.jpg",
-        "price": "\u20b94,099"
+        "title": "Fundamentals of Programming",
+        "url": "https://www.udemy.com/course/fundamentals-of-programming-languages/",
+        "description": "Learn the Basics of Programming in 9 languages simultaneously: Java, Python, Go, C++, PHP, Ruby, C#, JavaScript & C",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/3481868_cdea.jpg",
+        "price": "\u20b91,999"
       }
     ],
-    "Math for ML": [
+    "Mathematics for ML": [
       {
         "title": "Mathematical Foundations of Machine Learning",
         "url": "https://www.udemy.com/course/machine-learning-data-science-foundations-masterclass/",
@@ -225,22 +217,45 @@ $$$ Level 5
         "price": "\u20b94,099"
       },
       {
-        "title": "Complete Math, Statistics & Probability for Machine Learning",
-        "url": "https://www.udemy.com/course/probability-statistics-mathematics/",
-        "description": "(Updated 2023) Complete Mathematics, Probability & Statistics for Data Science,  Data Analytics, Machine & Deep Learning",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/4353116_ff55_19.jpg",
-        "price": "\u20b92,899"
+        "title": "Complete A.I. & Machine Learning, Data Science Bootcamp",
+        "url": "https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/",
+        "description": "Learn Data Science, Data Analysis, Machine Learning (Artificial Intelligence) and Python with Tensorflow, Pandas &amp; more!",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/2511476_4e38_5.jpg",
+        "price": "\u20b94,099"
       },
       {
-        "title": "Machine Learning Essentials - Master core ML concepts",
-        "url": "https://www.udemy.com/course/machine-learning-artificial-intelligence-essentials/",
-        "description": "Kickstart Machine Learning, understand maths behind essential algorithms, implement them in python &amp; build 8+ projects!",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/4244284_46e8.jpg",
-        "price": "\u20b92,299"
+        "title": "Machine Learning  and Artificial Intelligent for Starters",
+        "url": "https://www.udemy.com/course/machine-learning-and-artificial-intelligent-for-starters/",
+        "description": "Introduction to Machine Learning and AI with sklearn | Numpy| Pandas | Matplotlib | ML Mathematics and Statistics",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/5375052_e3cf_2.jpg",
+        "price": "\u20b9799"
       }
     ]
   },
   "Level 2": {
+    "Data Manipulation & Analysis": [
+      {
+        "title": "Data Manipulation in Python: A Pandas Crash Course",
+        "url": "https://www.udemy.com/course/data-manipulation-in-python/",
+        "description": "Learn how to use Python and Pandas for data analysis and data manipulation. Transform, clean and merge data with Python.",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/2860646_37eb_2.jpg",
+        "price": "\u20b93,999"
+      },
+      {
+        "title": "Data Manipulation With Dplyr in R",
+        "url": "https://www.udemy.com/course/data-manipulation-with-dplyr-in-r/",
+        "description": "A straightforward tutorial in data wrangling with one of the most powerful R packages - dplyr.",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/3654314_e945_2.jpg",
+        "price": "\u20b92,499"
+      },
+      {
+        "title": "Data Acquisition and Manipulation with Python",
+        "url": "https://www.udemy.com/course/data-acquisition-and-manipulation-with-python/",
+        "description": "Acquire and analyse data in different formats with the help of Python data analysis tools",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/1388686_7526_2.jpg",
+        "price": "\u20b9799"
+      }
+    ],
     "Supervised Learning": [
       {
         "title": "Machine Learning A-Z: AI, Python & R + ChatGPT Prize [2024]",
@@ -273,41 +288,18 @@ $$$ Level 5
         "price": "\u20b91,999"
       },
       {
-        "title": "Clustering And Dimensionality Reduction - Deep Dive",
-        "url": "https://www.udemy.com/course/clustering-and-dimensionality-reduction-deep-dive/",
-        "description": "Unlock the Power of Unsupervised Machine Learning and Data Mining with Cluster Analysis and Dimensionality Reduction",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/5475002_091d_3.jpg",
-        "price": "\u20b9799"
-      },
-      {
         "title": "Cluster Analysis and Unsupervised Machine Learning in Python",
         "url": "https://www.udemy.com/course/cluster-analysis-unsupervised-machine-learning-python/",
         "description": "Data science techniques for pattern recognition, data mining, k-means clustering, and hierarchical clustering, and KDE.",
         "thumbnail": "https://img-c.udemycdn.com/course/480x270/825684_ee00.jpg",
         "price": "\u20b91,199"
-      }
-    ],
-    "Data Preprocessing & Feature Engineering": [
-      {
-        "title": "Preprocessing Data with NumPy",
-        "url": "https://www.udemy.com/course/preprocessing-data-with-numpy/",
-        "description": "NumPy, ndarrays, Slicing, Random Generators, Importing and Saving Data, Statistics, Data Manipulation, Preprocessing",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/3697848_78c1.jpg",
-        "price": "\u20b93,499"
       },
       {
-        "title": "The Data Analyst Course: Complete Data Analyst Bootcamp",
-        "url": "https://www.udemy.com/course/the-data-analyst-course-complete-data-analyst-bootcamp/",
-        "description": "Complete Data Analyst Training: Python, NumPy, Pandas, Data Collection, Preprocessing, Data Types, Data Visualization",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/3570337_9b02_6.jpg",
-        "price": "\u20b93,499"
-      },
-      {
-        "title": "The A to Z of Data Preprocessing for Data Science in Python",
-        "url": "https://www.udemy.com/course/the-a-to-z-of-data-preprocessing-for-data-science-in-python/",
-        "description": "Master practical methods to handle outliers, multicollinearity, scaling, encoding, transformation, anomalies, and more!",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/5757832_daee_3.jpg",
-        "price": "\u20b9799"
+        "title": "Unsupervised Deep Learning in Python",
+        "url": "https://www.udemy.com/course/unsupervised-deep-learning-in-python/",
+        "description": "Autoencoders, Restricted Boltzmann Machines, Deep Neural Networks, t-SNE and PCA",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/846480_d909.jpg",
+        "price": "\u20b91,299"
       }
     ]
   },
@@ -335,7 +327,14 @@ $$$ Level 5
         "price": "\u20b93,499"
       }
     ],
-    "Natural Language Processing (NLP)": [
+    "Natural Language Processing": [
+      {
+        "title": "Machine Learning: Natural Language Processing in Python (V2)",
+        "url": "https://www.udemy.com/course/natural-language-processing-in-python/",
+        "description": "NLP: Use Markov Models, NLTK, Artificial Intelligence, Deep Learning, Machine Learning, and Data Science in Python",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/4294434_daf2_5.jpg",
+        "price": "\u20b93,699"
+      },
       {
         "title": "NLP - Natural Language Processing with Python",
         "url": "https://www.udemy.com/course/nlp-natural-language-processing-with-python/",
@@ -344,18 +343,11 @@ $$$ Level 5
         "price": "\u20b93,499"
       },
       {
-        "title": "Natural Language Processing (NLP) in Python with 8 Projects",
-        "url": "https://www.udemy.com/course/complete-natural-language-processing-nlp-with-spacy-nltk/",
-        "description": "Work on 8 Projects, Learn Natural Language Processing Python, Machine Learning, Deep Learning, SpaCy, NLTK, Sklearn, CNN",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/3053080_3c67_2.jpg",
-        "price": "\u20b93,499"
-      },
-      {
-        "title": "Machine Learning: Natural Language Processing in Python (V2)",
-        "url": "https://www.udemy.com/course/natural-language-processing-in-python/",
-        "description": "NLP: Use Markov Models, NLTK, Artificial Intelligence, Deep Learning, Machine Learning, and Data Science in Python",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/4294434_daf2_5.jpg",
-        "price": "\u20b93,699"
+        "title": "Generative AI - Natural Language Processing Bootcamp 2024",
+        "url": "https://www.udemy.com/course/practical-natural-language-processing-go-from-zero-to-hero/",
+        "description": "Generative AI Mastery with NLP LLM: Create Chatbots, RASA, ChatGPT, BERT, Transformers, Prompt Engineering Mastery",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/4955494_0897_3.jpg",
+        "price": "\u20b92,699"
       }
     ],
     "Computer Vision": [
@@ -388,139 +380,93 @@ $$$ Level 5
         "title": "Reinforcement Learning beginner to master - AI in Python",
         "url": "https://www.udemy.com/course/beginner-master-rl-1/",
         "description": "Build Artificial Intelligence (AI) agents using Deep Reinforcement Learning and PyTorch: A2C, REINFORCE, DQN, etc.",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/3725442_3406_3.jpg",
+        "thumbnail": "https://img-b.udemycdn.com/course/480x270/3725442_3406_3.jpg",
         "price": "\u20b93,099"
       },
       {
         "title": "Cutting-Edge AI: Deep Reinforcement Learning in Python",
         "url": "https://www.udemy.com/course/cutting-edge-artificial-intelligence/",
         "description": "Apply deep learning to artificial intelligence and reinforcement learning using evolution strategies, A2C, and DDPG",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/2310440_7c36_3.jpg",
+        "thumbnail": "https://img-b.udemycdn.com/course/480x270/2310440_7c36_3.jpg",
         "price": "\u20b92,799"
       },
       {
         "title": "Artificial Intelligence: Reinforcement Learning in Python",
         "url": "https://www.udemy.com/course/artificial-intelligence-reinforcement-learning-in-python/",
         "description": "Complete guide to Reinforcement Learning, with Stock Trading and Online Advertising Applications",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/1080408_2645_3.jpg",
+        "thumbnail": "https://img-b.udemycdn.com/course/480x270/1080408_2645_3.jpg",
         "price": "\u20b93,099"
       }
     ],
-    "Generative Adversarial Networks (GANs)": [
+    "Advanced Topics": [
       {
-        "title": "Generative Adversarial Networks (GANs): Complete Guide",
-        "url": "https://www.udemy.com/course/generative-adversarial-networks-gans-complete-guide/",
-        "description": "Deep Learning and Computer Vision to implement projects using one of the most revolutionary technologies in the world!",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/5283810_1d96_2.jpg",
+        "title": "C# Advanced Topics: Prepare for Technical Interviews",
+        "url": "https://www.udemy.com/course/csharp-advanced/",
+        "description": "Master the confusing C# constructs: Events, Delegates, Lambda Expressions, LINQ, Async/Await and more!",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/356030_0209_6.jpg",
+        "price": "\u20b93,699"
+      },
+      {
+        "title": "Advanced Topics in C#",
+        "url": "https://www.udemy.com/course/advanced-topics-csharp/",
+        "description": "A discussion of the more complicated aspects of the C# language",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/1087854_935e_2.jpg",
+        "price": "\u20b93,099"
+      },
+      {
+        "title": "Ultimate C# Masterclass for 2024",
+        "url": "https://www.udemy.com/course/ultimate-csharp-masterclass/",
+        "description": "In-depth .NET programming course from basics to advanced. Focus on clean code, performance and practice.",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/4682614_1ff0_2.jpg",
         "price": "\u20b9799"
-      },
-      {
-        "title": "High Resolution Generative Adversarial Networks (GANs)",
-        "url": "https://www.udemy.com/course/high-resolution-generative-adversarial-networks/",
-        "description": "Photorealistic image generation with Python and TensorFlow 2.0",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/4478692_7a04_2.jpg",
-        "price": "\u20b92,299"
-      },
-      {
-        "title": "Keras Deep Learning & Generative Adversarial Networks (GAN)",
-        "url": "https://www.udemy.com/course/keras-deep-learning-generative-adversarial-networks-gan/",
-        "description": "Learn From the Scratch to Expert Level: Deep Learning & Generative Adversarial Networks (GAN) using Python with Keras",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/5282452_9180.jpg",
-        "price": "\u20b9799"
-      }
-    ],
-    "Ethics & Responsible AI": [
-      {
-        "title": "Human Values and Professional Ethics",
-        "url": "https://www.udemy.com/course/human-values-and-professional-ethics/",
-        "description": "Dynamics",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/4621634_f737.jpg",
-        "price": "\u20b91,999"
-      },
-      {
-        "title": "ETHICS",
-        "url": "https://www.udemy.com/course/ethics-h/",
-        "description": "Business Ethics",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/3654954_dce3_3.jpg",
-        "price": "\u20b91,299"
-      },
-      {
-        "title": "Leadership Ethics and Integrity: A Comprehensive Guide !",
-        "url": "https://www.udemy.com/course/insights-into-integrity-ethics-and-morality-for-leaders/",
-        "description": "Deep and Enlightening Insights, and Lessons, from the Research on Integrity, Ethics and Morality, for today's Leaders !",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/1904280_5861_10.jpg",
-        "price": "\u20b92,999"
       }
     ]
   },
   "Level 5": {
-    "Advanced ML Techniques": [
+    "Building AI Applications": [
       {
-        "title": "Mastering ML:Hyperparameter Optimization & Feature Selection",
-        "url": "https://www.udemy.com/course/mastering-ml-hyperparameter-optimization-feature-selection/",
-        "description": "Advanced ML Techniques: Hyperparameter Optimization, Feature Selection, Hands-on Python Practice Utilizing Key Libraries",
-        "thumbnail": "https://img-b.udemycdn.com/course/480x270/5640814_d0ec_8.jpg",
-        "price": "\u20b91,999"
+        "title": "LangChain- Develop LLM powered applications with LangChain",
+        "url": "https://www.udemy.com/course/langchain/",
+        "description": "Learn LangChain by building FAST a real world generative ai LLM powered application LLM (Python, Latest Version 0.2.6)",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/5281528_8f36.jpg",
+        "price": "\u20b9799"
       },
       {
-        "title": "LLMOps & ML Deployment: Bring LLMs and GenAI to Production",
-        "url": "https://www.udemy.com/course/deploy-ai-smarter-llm-scalability-ml-ops-cost-efficiency/",
-        "description": "Llama 3, GPT, ML-Ops, Ray, MLFlow, LoRa, AWQ, GPTQ, LLMOps, Deployment, Generative AI, LLMs, Flash Paged Attention, Cost",
-        "thumbnail": "https://img-b.udemycdn.com/course/480x270/5900786_7af4_13.jpg",
-        "price": "\u20b91,999"
+        "title": "Building Gen AI App 12+ Hands-on Projects with Gemini Pro",
+        "url": "https://www.udemy.com/course/building-gen-ai-app-end-to-end-projects-with-gemini-pro/",
+        "description": "Mastering AI Innovation: Building and Fine-tuning Generative AI Applications with Google Gemini Models And Langchain",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/5979624_0720_4.jpg",
+        "price": "\u20b91,499"
       },
       {
-        "title": "AI & ML Made Easy : A Comprehensive Guide (2024)",
-        "url": "https://www.udemy.com/course/aritificial-intelligence-machine-learning-comprehensive-guide-2024/",
-        "description": "From Understanding Intelligence to Deep Learning: Unravel AI &amp; ML in Real-World Applications for a Future-Proof Career",
-        "thumbnail": "https://img-b.udemycdn.com/course/480x270/5618888_e3bc_5.jpg",
-        "price": "\u20b92,299"
+        "title": "ChatGPT - Building AI Applications Visually (no-code)",
+        "url": "https://www.udemy.com/course/building-chatgpt-ai-applications-visually-no-code/",
+        "description": "Easiest way to build AI apps| 15 ChatGPT projects | Chat with your data | Embed Chatbot in Website | Flowise | Langchain",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/5249662_4cbd.jpg",
+        "price": "\u20b9799"
       }
     ],
-    "Building & Deploying AI Systems": [
+    "Research & Development": [
       {
-        "title": "100 Days of Code: The Complete Python Pro Bootcamp",
-        "url": "https://www.udemy.com/course/100-days-of-code/",
-        "description": "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/2776760_f176_10.jpg",
+        "title": "Research Methodology: Complete Research Project Blueprint",
+        "url": "https://www.udemy.com/course/research-methodology-complete-research-project-blueprint/",
+        "description": "Research Methodology From A-Z. A Step-by-Step Guide Through Research Design, Data Collection, Analysis, & Interpretation",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/3664080_9ff1_2.jpg",
         "price": "\u20b93,099"
       },
       {
-        "title": "The Complete Link Building Course - Backlink Building 2024",
-        "url": "https://www.udemy.com/course/the-complete-link-building-course-backlink-building-2020/",
-        "description": "A Link Building Masterclass - A Step By Step Process On How You Can Build High Quality Backlinks To Your Website.",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/2934494_d6fb_5.jpg",
-        "price": "\u20b92,899"
+        "title": "Market Research: Dekker's Complete Marketing Research Course",
+        "url": "https://www.udemy.com/course/market-research-complete-marketing-research-course-2022/",
+        "description": "Competitor Analysis, Market Research Hacks, Marketing Analytics, Customer Journey, CRO, AB Testing, Exploratory Research",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/4839758_546e_3.jpg",
+        "price": "\u20b93,099"
       },
       {
-        "title": "Essentials of Smart Building Technology",
-        "url": "https://www.udemy.com/course/essentials-of-sbt/",
-        "description": "The Future Smart Homes",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/3332494_bc0e_2.jpg",
+        "title": "The Complete Market Research Bootcamp",
+        "url": "https://www.udemy.com/course/market-research-bootcamp/",
+        "description": "Don\u2019t just learn, but MASTER core research methodologies, and learn how to leverage AI to supercharge how you work!",
+        "thumbnail": "https://img-c.udemycdn.com/course/480x270/5318140_b847_2.jpg",
         "price": "\u20b9799"
-      }
-    ],
-    "Industry Applications of AI": [
-      {
-        "title": "Artificial Intelligence In Media And Entertainment",
-        "url": "https://www.udemy.com/course/artificial-intelligence-in-media-and-entertainment/",
-        "description": "Revolutionizing social media strategy with the power of AI, Application of AI in entertainment industry, AI in film etc",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/5478722_8e4d.jpg",
-        "price": "\u20b9799"
-      },
-      {
-        "title": "Machine learning for chemical industries to boost profit",
-        "url": "https://www.udemy.com/course/learn-machine-learning-to-apply-it-in-real-life-industries/",
-        "description": "Learn to create AI application from Industry experts. Special  application for chemical , energy and allied industries",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/5261326_fd13.jpg",
-        "price": "\u20b9799"
-      },
-      {
-        "title": "2024 Bootcamp: Generative AI + LLM App Development.",
-        "url": "https://www.udemy.com/course/bootcamp-generative-artificial-intelligence-and-llm-app-development/",
-        "description": "From zero to professional level: learn the keys to AI and build the most potential Generative AI applications.",
-        "thumbnail": "https://img-c.udemycdn.com/course/480x270/5782854_4bd2_6.jpg",
-        "price": "\u20b91,999"
       }
     ]
   }
@@ -538,27 +484,37 @@ $$$ Level 1
    ### EU AI Act Compliance Introduction
     URL: https://www.udemy.com/course/eu-ai-act-compliance/
     Description: A Beginner's Guide to Understanding and Achieving Compliance With European Union Artificial Intelligence Act
-  !!! Python Programming
+  !!! Programming Fundamentals
    ### 100 Days of Code: The Complete Python Pro Bootcamp
     URL: https://www.udemy.com/course/100-days-of-code/
     Description: Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!
-   ### Learn Python Programming - Beginner to Master
-    URL: https://www.udemy.com/course/learn-python-with-abdul-bari/
-    Description: Become a Python Expert. for Both Academics and Industry.  100+ Challenges
-   ### The Complete Python Developer
-    URL: https://www.udemy.com/course/complete-python-developer-zero-to-mastery/
-    Description: How to become a Python 3 Developer and get hired! Build 12+ projects, learn Web Development, Machine Learning + more!
-  !!! Math for ML
+   ### C Programming Bootcamp - The Complete C Language Course
+    URL: https://www.udemy.com/course/c-programming-for-beginners-programming-in-c/
+    Description: C Programming 2024: Master the Fundamentals of C Programming Language. Join the Comprehensive C Bootcamp Masterclass!
+   ### Fundamentals of Programming
+    URL: https://www.udemy.com/course/fundamentals-of-programming-languages/
+    Description: Learn the Basics of Programming in 9 languages simultaneously: Java, Python, Go, C++, PHP, Ruby, C#, JavaScript & C
+  !!! Mathematics for ML
    ### Mathematical Foundations of Machine Learning
     URL: https://www.udemy.com/course/machine-learning-data-science-foundations-masterclass/
     Description: Essential Linear Algebra and Calculus Hands-On in NumPy, TensorFlow, and PyTorch
-   ### Complete Math, Statistics & Probability for Machine Learning
-    URL: https://www.udemy.com/course/probability-statistics-mathematics/
-    Description: (Updated 2023) Complete Mathematics, Probability & Statistics for Data Science,  Data Analytics, Machine & Deep Learning
-   ### Machine Learning Essentials - Master core ML concepts
-    URL: https://www.udemy.com/course/machine-learning-artificial-intelligence-essentials/
-    Description: Kickstart Machine Learning, understand maths behind essential algorithms, implement them in python &amp; build 8+ projects!
+   ### Complete A.I. & Machine Learning, Data Science Bootcamp
+    URL: https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/
+    Description: Learn Data Science, Data Analysis, Machine Learning (Artificial Intelligence) and Python with Tensorflow, Pandas &amp; more!
+   ### Machine Learning  and Artificial Intelligent for Starters
+    URL: https://www.udemy.com/course/machine-learning-and-artificial-intelligent-for-starters/
+    Description: Introduction to Machine Learning and AI with sklearn | Numpy| Pandas | Matplotlib | ML Mathematics and Statistics
 $$$ Level 2
+  !!! Data Manipulation & Analysis
+   ### Data Manipulation in Python: A Pandas Crash Course
+    URL: https://www.udemy.com/course/data-manipulation-in-python/
+    Description: Learn how to use Python and Pandas for data analysis and data manipulation. Transform, clean and merge data with Python.
+   ### Data Manipulation With Dplyr in R
+    URL: https://www.udemy.com/course/data-manipulation-with-dplyr-in-r/
+    Description: A straightforward tutorial in data wrangling with one of the most powerful R packages - dplyr.
+   ### Data Acquisition and Manipulation with Python
+    URL: https://www.udemy.com/course/data-acquisition-and-manipulation-with-python/
+    Description: Acquire and analyse data in different formats with the help of Python data analysis tools
   !!! Supervised Learning
    ### Machine Learning A-Z: AI, Python & R + ChatGPT Prize [2024]
     URL: https://www.udemy.com/course/machinelearning/
@@ -573,22 +529,12 @@ $$$ Level 2
    ### Python Data Science: Unsupervised Machine Learning
     URL: https://www.udemy.com/course/data-science-in-python-unsupervised-learning/
     Description: Learn Python for data science &amp; machine learning, and build unsupervised learning models w/ a top Python instructor!
-   ### Clustering And Dimensionality Reduction - Deep Dive
-    URL: https://www.udemy.com/course/clustering-and-dimensionality-reduction-deep-dive/
-    Description: Unlock the Power of Unsupervised Machine Learning and Data Mining with Cluster Analysis and Dimensionality Reduction
    ### Cluster Analysis and Unsupervised Machine Learning in Python
     URL: https://www.udemy.com/course/cluster-analysis-unsupervised-machine-learning-python/
     Description: Data science techniques for pattern recognition, data mining, k-means clustering, and hierarchical clustering, and KDE.
-  !!! Data Preprocessing & Feature Engineering
-   ### Preprocessing Data with NumPy
-    URL: https://www.udemy.com/course/preprocessing-data-with-numpy/
-    Description: NumPy, ndarrays, Slicing, Random Generators, Importing and Saving Data, Statistics, Data Manipulation, Preprocessing
-   ### The Data Analyst Course: Complete Data Analyst Bootcamp
-    URL: https://www.udemy.com/course/the-data-analyst-course-complete-data-analyst-bootcamp/
-    Description: Complete Data Analyst Training: Python, NumPy, Pandas, Data Collection, Preprocessing, Data Types, Data Visualization
-   ### The A to Z of Data Preprocessing for Data Science in Python
-    URL: https://www.udemy.com/course/the-a-to-z-of-data-preprocessing-for-data-science-in-python/
-    Description: Master practical methods to handle outliers, multicollinearity, scaling, encoding, transformation, anomalies, and more!
+   ### Unsupervised Deep Learning in Python
+    URL: https://www.udemy.com/course/unsupervised-deep-learning-in-python/
+    Description: Autoencoders, Restricted Boltzmann Machines, Deep Neural Networks, t-SNE and PCA
 $$$ Level 3
   !!! Deep Learning
    ### Deep Learning A-Z 2024: Neural Networks, AI & ChatGPT Prize
@@ -600,16 +546,16 @@ $$$ Level 3
    ### TensorFlow for Deep Learning Bootcamp
     URL: https://www.udemy.com/course/tensorflow-developer-certificate-machine-learning-zero-to-mastery/
     Description: Learn TensorFlow by Google. Become an AI, Machine Learning, and Deep Learning expert!
-  !!! Natural Language Processing (NLP)
-   ### NLP - Natural Language Processing with Python
-    URL: https://www.udemy.com/course/nlp-natural-language-processing-with-python/
-    Description: Learn to use Machine Learning, Spacy, NLTK, SciKit-Learn, Deep Learning, and more to conduct Natural Language Processing
-   ### Natural Language Processing (NLP) in Python with 8 Projects
-    URL: https://www.udemy.com/course/complete-natural-language-processing-nlp-with-spacy-nltk/
-    Description: Work on 8 Projects, Learn Natural Language Processing Python, Machine Learning, Deep Learning, SpaCy, NLTK, Sklearn, CNN
+  !!! Natural Language Processing
    ### Machine Learning: Natural Language Processing in Python (V2)
     URL: https://www.udemy.com/course/natural-language-processing-in-python/
     Description: NLP: Use Markov Models, NLTK, Artificial Intelligence, Deep Learning, Machine Learning, and Data Science in Python
+   ### NLP - Natural Language Processing with Python
+    URL: https://www.udemy.com/course/nlp-natural-language-processing-with-python/
+    Description: Learn to use Machine Learning, Spacy, NLTK, SciKit-Learn, Deep Learning, and more to conduct Natural Language Processing
+   ### Generative AI - Natural Language Processing Bootcamp 2024
+    URL: https://www.udemy.com/course/practical-natural-language-processing-go-from-zero-to-hero/
+    Description: Generative AI Mastery with NLP LLM: Create Chatbots, RASA, ChatGPT, BERT, Transformers, Prompt Engineering Mastery
   !!! Computer Vision
    ### Python for Computer Vision with OpenCV and Deep Learning
     URL: https://www.udemy.com/course/python-for-computer-vision-with-opencv-and-deep-learning/
@@ -631,92 +577,68 @@ $$$ Level 4
    ### Artificial Intelligence: Reinforcement Learning in Python
     URL: https://www.udemy.com/course/artificial-intelligence-reinforcement-learning-in-python/
     Description: Complete guide to Reinforcement Learning, with Stock Trading and Online Advertising Applications
-  !!! Generative Adversarial Networks (GANs)
-   ### Generative Adversarial Networks (GANs): Complete Guide
-    URL: https://www.udemy.com/course/generative-adversarial-networks-gans-complete-guide/
-    Description: Deep Learning and Computer Vision to implement projects using one of the most revolutionary technologies in the world!
-   ### High Resolution Generative Adversarial Networks (GANs)
-    URL: https://www.udemy.com/course/high-resolution-generative-adversarial-networks/
-    Description: Photorealistic image generation with Python and TensorFlow 2.0
-   ### Keras Deep Learning & Generative Adversarial Networks (GAN)
-    URL: https://www.udemy.com/course/keras-deep-learning-generative-adversarial-networks-gan/
-    Description: Learn From the Scratch to Expert Level: Deep Learning & Generative Adversarial Networks (GAN) using Python with Keras
-  !!! Ethics & Responsible AI
-   ### Human Values and Professional Ethics
-    URL: https://www.udemy.com/course/human-values-and-professional-ethics/
-    Description: Dynamics
-   ### ETHICS
-    URL: https://www.udemy.com/course/ethics-h/
-    Description: Business Ethics
-   ### Leadership Ethics and Integrity: A Comprehensive Guide !
-    URL: https://www.udemy.com/course/insights-into-integrity-ethics-and-morality-for-leaders/
-    Description: Deep and Enlightening Insights, and Lessons, from the Research on Integrity, Ethics and Morality, for today's Leaders !
+  !!! Advanced Topics
+   ### C# Advanced Topics: Prepare for Technical Interviews
+    URL: https://www.udemy.com/course/csharp-advanced/
+    Description: Master the confusing C# constructs: Events, Delegates, Lambda Expressions, LINQ, Async/Await and more!
+   ### Advanced Topics in C#
+    URL: https://www.udemy.com/course/advanced-topics-csharp/
+    Description: A discussion of the more complicated aspects of the C# language
+   ### Ultimate C# Masterclass for 2024
+    URL: https://www.udemy.com/course/ultimate-csharp-masterclass/
+    Description: In-depth .NET programming course from basics to advanced. Focus on clean code, performance and practice.
 $$$ Level 5
-  !!! Advanced ML Techniques
-   ### Mastering ML:Hyperparameter Optimization & Feature Selection
-    URL: https://www.udemy.com/course/mastering-ml-hyperparameter-optimization-feature-selection/
-    Description: Advanced ML Techniques: Hyperparameter Optimization, Feature Selection, Hands-on Python Practice Utilizing Key Libraries
-   ### LLMOps & ML Deployment: Bring LLMs and GenAI to Production
-    URL: https://www.udemy.com/course/deploy-ai-smarter-llm-scalability-ml-ops-cost-efficiency/
-    Description: Llama 3, GPT, ML-Ops, Ray, MLFlow, LoRa, AWQ, GPTQ, LLMOps, Deployment, Generative AI, LLMs, Flash Paged Attention, Cost
-   ### AI & ML Made Easy : A Comprehensive Guide (2024)
-    URL: https://www.udemy.com/course/aritificial-intelligence-machine-learning-comprehensive-guide-2024/
-    Description: From Understanding Intelligence to Deep Learning: Unravel AI &amp; ML in Real-World Applications for a Future-Proof Career
-  !!! Building & Deploying AI Systems
-   ### 100 Days of Code: The Complete Python Pro Bootcamp
-    URL: https://www.udemy.com/course/100-days-of-code/
-    Description: Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!
-   ### The Complete Link Building Course - Backlink Building 2024
-    URL: https://www.udemy.com/course/the-complete-link-building-course-backlink-building-2020/
-    Description: A Link Building Masterclass - A Step By Step Process On How You Can Build High Quality Backlinks To Your Website.
-   ### Essentials of Smart Building Technology
-    URL: https://www.udemy.com/course/essentials-of-sbt/
-    Description: The Future Smart Homes
-  !!! Industry Applications of AI
-   ### Artificial Intelligence In Media And Entertainment
-    URL: https://www.udemy.com/course/artificial-intelligence-in-media-and-entertainment/
-    Description: Revolutionizing social media strategy with the power of AI, Application of AI in entertainment industry, AI in film etc
-   ### Machine learning for chemical industries to boost profit
-    URL: https://www.udemy.com/course/learn-machine-learning-to-apply-it-in-real-life-industries/
-    Description: Learn to create AI application from Industry experts. Special  application for chemical , energy and allied industries
-   ### 2024 Bootcamp: Generative AI + LLM App Development.
-    URL: https://www.udemy.com/course/bootcamp-generative-artificial-intelligence-and-llm-app-development/
-    Description: From zero to professional level: learn the keys to AI and build the most potential Generative AI applications.
+  !!! Building AI Applications
+   ### LangChain- Develop LLM powered applications with LangChain
+    URL: https://www.udemy.com/course/langchain/
+    Description: Learn LangChain by building FAST a real world generative ai LLM powered application LLM (Python, Latest Version 0.2.6)
+   ### Building Gen AI App 12+ Hands-on Projects with Gemini Pro
+    URL: https://www.udemy.com/course/building-gen-ai-app-end-to-end-projects-with-gemini-pro/
+    Description: Mastering AI Innovation: Building and Fine-tuning Generative AI Applications with Google Gemini Models And Langchain
+   ### ChatGPT - Building AI Applications Visually (no-code)
+    URL: https://www.udemy.com/course/building-chatgpt-ai-applications-visually-no-code/
+    Description: Easiest way to build AI apps| 15 ChatGPT projects | Chat with your data | Embed Chatbot in Website | Flowise | Langchain
+  !!! Research & Development
+   ### Research Methodology: Complete Research Project Blueprint
+    URL: https://www.udemy.com/course/research-methodology-complete-research-project-blueprint/
+    Description: Research Methodology From A-Z. A Step-by-Step Guide Through Research Design, Data Collection, Analysis, & Interpretation
+   ### Market Research: Dekker's Complete Marketing Research Course
+    URL: https://www.udemy.com/course/market-research-complete-marketing-research-course-2022/
+    Description: Competitor Analysis, Market Research Hacks, Marketing Analytics, Customer Journey, CRO, AB Testing, Exploratory Research
+   ### The Complete Market Research Bootcamp
+    URL: https://www.udemy.com/course/market-research-bootcamp/
+    Description: Don’t just learn, but MASTER core research methodologies, and learn how to leverage AI to supercharge how you work!
 
 ### Selected Courses Response
 $$$ Level 1
   !!! Introduction to AI & ML
    ### https://www.udemy.com/course/introduction-to-ai-and-chatgpt/
-  !!! Python Programming
+  !!! Programming Fundamentals
    ### https://www.udemy.com/course/100-days-of-code/
-  !!! Math for ML
+  !!! Mathematics for ML
    ### https://www.udemy.com/course/machine-learning-data-science-foundations-masterclass/
 $$$ Level 2
+  !!! Data Manipulation & Analysis
+   ### https://www.udemy.com/course/data-manipulation-in-python/
   !!! Supervised Learning
    ### https://www.udemy.com/course/machinelearning/
   !!! Unsupervised Learning
    ### https://www.udemy.com/course/data-science-in-python-unsupervised-learning/
-  !!! Data Preprocessing & Feature Engineering
-   ### https://www.udemy.com/course/the-data-analyst-course-complete-data-analyst-bootcamp/
 $$$ Level 3
   !!! Deep Learning
    ### https://www.udemy.com/course/deeplearning/
-  !!! Natural Language Processing (NLP)
-   ### https://www.udemy.com/course/nlp-natural-language-processing-with-python/
+  !!! Natural Language Processing
+   ### https://www.udemy.com/course/natural-language-processing-in-python/
   !!! Computer Vision
    ### https://www.udemy.com/course/python-for-computer-vision-with-opencv-and-deep-learning/
 $$$ Level 4
   !!! Reinforcement Learning
    ### https://www.udemy.com/course/beginner-master-rl-1/
-  !!! Generative Adversarial Networks (GANs)
-   ### https://www.udemy.com/course/generative-adversarial-networks-gans-complete-guide/
-  !!! Ethics & Responsible AI
-   ### https://www.udemy.com/course/human-values-and-professional-ethics/
+  !!! Advanced Topics
+   ### https://www.udemy.com/course/csharp-advanced/
 $$$ Level 5
-  !!! Advanced ML Techniques
-   ### https://www.udemy.com/course/mastering-ml-hyperparameter-optimization-feature-selection/
-  !!! Building & Deploying AI Systems
-   ### https://www.udemy.com/course/100-days-of-code/
-  !!! Industry Applications of AI
-   ### https://www.udemy.com/course/artificial-intelligence-in-media-and-entertainment/
+  !!! Building AI Applications
+   ### https://www.udemy.com/course/langchain/
+  !!! Research & Development
+   ### https://www.udemy.com/course/research-methodology-complete-research-project-blueprint/ 
 
