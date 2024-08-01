@@ -41,16 +41,11 @@ def fetch_course_structure(id):
     })
     
     data = response.json()
-    course_structure = {}
-    
-    current_chapter = None
+    course_structure = []
     
     for item in data["results"]:
         if item["_class"] == "chapter":
-            current_chapter = item["title"]
-            course_structure[current_chapter] = []
-        elif item["_class"] == "lecture" and current_chapter:
-            course_structure[current_chapter].append(item["title"])
+            course_structure.append(item["title"])
     
     return course_structure
 
