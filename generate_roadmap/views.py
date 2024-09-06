@@ -871,7 +871,7 @@ def generate_mcqs(request):
         model = genai.GenerativeModel('gemini-1.5-flash')
         
         prompt = f"""
-        You have the following topic {topic_name}. Give me 10 MCQ questions that cover essentials in that topic. The questions are required for a preparatory quiz for a job interview, so keep the questions at industry level difficulty only, do not keep the questions of easy difficulty. Ensure there are no redundant questions and that you give exact 10 MCQs with only 1 correct answer. Ensure that you only give the questions and the answer key as the response with no extra text. Do not include any bolded letters or any sort of font formatting. Give the output in JSON format.
+        You have the following topic {topic_name}. Give me 10 questions, 5 of which are objective and contain 4 options, the remaining 5 are subjective questions ensure that you do NOT give me answers for them. The questions should cover essentials in that topic. The questions are required for a preparatory quiz for a job interview, so keep the questions at industry level difficulty only, do not keep the questions of easy difficulty. Ensure there are no redundant questions and that you give exact 10 MCQs with only 1 correct answer. Ensure that you only give the questions and the answer key as the response with no extra text. Do not include any bolded letters or any sort of font formatting. Give the output in JSON format.
         """
         
         response = model.generate_content(prompt).text
@@ -883,6 +883,11 @@ def generate_interview_questions(request):
   if request.method == "GET":
     skill = request.GET.get('skill', None)
     skill_level = request.GET.get('skill_level', None)
+
+    genai.configure(api_key="AIzaSyBzjohOuPQSaNZ9hTJBYCiKLwpC_8_PSMo")
+        
+    model = genai.GenerativeModel('gemini-1.5-flash')
+
     if skill is None:
       return JsonResponse({'error': 'Skill not provided'}, status=400)
 
@@ -890,8 +895,11 @@ def generate_interview_questions(request):
       return JsonResponse({'error': 'Skill level not provided'}, status=400)
 
     interview_prompt = f"""
-    Create a comprehensive set of 10 questions for {skill}, for someone with a skill of {skill_level}. Do not include any other text or explanations. The questions should only include things one can be asked in an interview. Questions should not have an option to write the code. Some of the coding question's 
+    Create a comprehensive set of 5 subjective questions for {skill}, for someone with a skill of {skill_level}. The questions are required for a preparatory quiz for a job interview, so keep the questions at industry level difficulty only, do not keep the questions of easy difficulty. Ensure there are no redundant questions. The questions should only include things one can be asked in an interview. Ensure that you only give the questions and there should be NO answer key as the response with no extra text. Do not include any bolded letters or any sort of font formatting. Give the output in JSON format.
     """
+    response = model.generate_content(interview_prompt).text
+        
+    return HttpResponse(response, content_type = "application/json")
 
     # return HttpResponse(
     #   interview_response,
