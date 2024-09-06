@@ -19,5 +19,11 @@ from django.urls import include, path
 
 urlpatterns = [
     path('', include('generate_roadmap.urls')),
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls)
+    
 ]
+
+# urlpatterns = [
+#     path('admin/', admin.site.urls),
+#     # path('your_app_name/', include('your_app_name.urls')),
+# ]

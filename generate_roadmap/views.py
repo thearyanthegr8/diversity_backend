@@ -10,6 +10,45 @@ import os
 import re
 from .fetch_courses import fetch_course_structure
 
+# from rest_framework.views import APIView
+# from rest_framework.response import Response
+# from rest_framework import status
+# # from .models import QuestionAnswer
+# # from .serializers import QuestionAnswerSerializer
+
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
+# from .models import QuestionAnswer
+# from .serializers import QuestionAnswerSerializer
+
+@csrf_exempt
+def score_answers(request):
+    if request.method == 'POST' and request.FILES.get('file'):
+        try:
+            file = request.FILES['file']
+            print("File received:", file.name)
+            print("File content type:", file.content_type)
+            print("File size:", file.size)
+            if file.size == 0:
+                return JsonResponse({'error': 'Empty file'}, status=400)
+            file_content = file.read().decode('utf-8')
+            print("File content:", file_content)
+            data = json.loads(file_content)
+            print("Data loaded:", data)
+            questions_and_answers = data.get('questions_and_answers', [])
+            for item in questions_and_answers:
+                # Simulate AI model scoring
+                item['score'] = 0.8  # Assign a default score of 0.8 to each answer
+            return JsonResponse({'questions_and_answers': questions_and_answers}, status=200)
+        except json.JSONDecodeError as e:
+            print("JSON Decode Error:", str(e))
+            return JsonResponse({'error': 'Invalid JSON'}, status=400)
+        except Exception as e:
+            print("Exception:", str(e))
+            return JsonResponse({'error': str(e)}, status=500)
+    return JsonResponse({'error': 'Invalid request method or missing file'}, status=405)
+
 @csrf_exempt 
 def generate_roadmap(request):
   if request.method == "GET":

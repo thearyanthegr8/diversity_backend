@@ -1,0 +1,44 @@
+{
+    "questions_and_answers": [
+      {
+        "question": "What is supervised learning?",
+        "answer": "Supervised learning is a type of machine learning where the model is trained on labeled data. The algorithm learns from the input-output pairs and makes predictions based on that learning."
+      },
+      {
+        "question": "What is the difference between classification and regression?",
+        "answer": "Classification is a type of supervised learning where the output is a discrete label, while regression is a type of supervised learning where the output is a continuous value."
+      },
+      {
+        "question": "What is overfitting in machine learning?",
+        "answer": "Overfitting occurs when a machine learning model learns the training data too well, including its noise and outliers, leading to poor performance on new, unseen data."
+      },
+      {
+        "question": "What is a neural network?",
+        "answer": "A neural network is a series of algorithms that attempt to recognize underlying relationships in a set of data through a process that mimics the way the human brain operates."
+      },
+      {
+        "question": "What is the purpose of an activation function in a neural network?",
+        "answer": "An activation function in a neural network introduces non-linearity into the model, allowing it to learn more complex patterns."
+      },
+      {
+        "question": "What is the difference between a convolutional neural network (CNN) and a recurrent neural network (RNN)?",
+        "answer": "A CNN is primarily used for image data and processes data with a grid-like topology, while an RNN is used for sequential data and has connections that form directed cycles."
+      },
+      {
+        "question": "What is reinforcement learning?",
+        "answer": "Reinforcement learning is a type of machine learning where an agent learns to make decisions by performing actions in an environment to maximize cumulative reward."
+      },
+      {
+        "question": "What is a support vector machine (SVM)?",
+        "answer": "A support vector machine is a supervised learning model that finds the hyperplane that best separates different classes in the feature space."
+      },
+      {
+        "question": "What is the bias-variance tradeoff?",
+        "answer": "The bias-variance tradeoff is the balance between the error introduced by the bias (error from erroneous assumptions) and the variance (error from sensitivity to small fluctuations in the training set)."
+      },
+      {
+        "question": "What is a decision tree?",
+        "answer": "A decision tree is a supervised learning algorithm that splits the data into subsets based on the value of input features, creating a tree-like model of decisions."
+      }
+    ]
+  }
