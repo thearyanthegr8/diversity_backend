@@ -19,6 +19,7 @@ from .fetch_courses import fetch_course_structure
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+from ai.main import ai_main
 # from .models import QuestionAnswer
 # from .serializers import QuestionAnswerSerializer
 
@@ -37,9 +38,9 @@ def score_answers(request):
             data = json.loads(file_content)
             print("Data loaded:", data)
             questions_and_answers = data.get('questions_and_answers', [])
-            for item in questions_and_answers:
-                # Simulate AI model scoring
-                item['score'] = 0.8  # Assign a default score of 0.8 to each answer
+
+            ai_main(questions_and_answers)
+
             return JsonResponse({'questions_and_answers': questions_and_answers}, status=200)
         except json.JSONDecodeError as e:
             print("JSON Decode Error:", str(e))
